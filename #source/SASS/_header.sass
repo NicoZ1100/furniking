@@ -1,5 +1,37 @@
-.header
-	&__top
-		padding: 15px 0 15px 0
-		background-color: $main_color
-		width: 100%
+.wrapper
+	.header
+		.header__top
+			padding: 15px 0 15px 0
+			background-color: $main_color
+			.container
+				display: flex
+				justify-content: space-between
+				font-family: 'Rubik'
+				font-weight: 400
+				font-size: 16px
+				line-height: 19px
+				color: $on_bg_color
+				&__item
+					span
+						margin-right: 61px
+					a
+						padding: 1px 5px
+						font-family: 'Rubik'
+						font-weight: 400
+						font-size: 16px
+						line-height: 19px
+						color: $on_bg_color
+						border-radius: 5px
+						border: 1px solid $main_color
+						cursor: pointer
+						transition: all .4s
+						&:hover
+							border: 1px solid #fff
+							border-radius: 5px
+							background-color: #fff
+							color: $main_color
+
+
+
+
+
