@@ -14,7 +14,7 @@
 				&__item
 					span
 						margin-right: 61px
-					a
+					a.container__item_link
 						padding: 1px 5px
 						font-family: 'Rubik'
 						font-weight: 400
@@ -30,8 +30,73 @@
 							border-radius: 5px
 							background-color: #fff
 							color: $main_color
-
-
+		.container
+			.fur-flex
+				display: flex
+				justify-content: start
+				align-items: center
+				padding: 21px 0 25px 0
+				.logo
+					max-width: 147px
+					margin-right: 120px
+					&__link
+						display: block
+						width: 100%
+						.logo__img
+							width: 100%
+				.form-search
+					position: relative
+					&__input
+						width: 555px
+						padding: 15px 200px 15px 25px
+						color: $sub_color1
+						font-size: 14px
+						border: 2px solid $main_color
+						border-radius: 8px
+						&::placeholder
+							font-family: $main_family
+							font-weight: 400
+							font-size: 14px
+							color: #B0B0B0
+					&__categories
+						position: absolute
+						top: 3px
+						right: 85px
+						padding: 15px 10px
+						font-family: $main_family
+						font-weight: 400
+						font-size: 14px
+						color: $sub_color1
+						cursor: pointer
+						.categories-img
+							position: absolute
+							top: 16px
+							right: -15px
+							padding: 5px
+							cursor: pointer
+					&__categories::before
+							content: ""
+							position: absolute
+							top: -1px
+							left: -10px
+							width: 2px
+							height: 47px
+							background-color: rgba(227, 227, 227, 0.78)
+					&__link
+						position: absolute
+						top: 2px
+						right: 0
+						width: 55px
+						height: 47px
+						background-color: $main_color
+						border-radius: 0 8px 8px 0
+						&_img
+							position: absolute
+							top: 50%
+							transform: translateY(-50%)
+							left: 21px
+					:hover
+						color: $main_color
 
 
 
