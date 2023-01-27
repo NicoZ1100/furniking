@@ -46,6 +46,7 @@
 							width: 100%
 				.form-search
 					position: relative
+					margin-right: 201px
 					&__input
 						width: 555px
 						padding: 15px 200px 15px 25px
@@ -68,6 +69,8 @@
 						font-size: 14px
 						color: $sub_color1
 						cursor: pointer
+						&:hover
+							color: $main_color
 						.categories-img
 							position: absolute
 							top: 16px
@@ -95,8 +98,33 @@
 							top: 50%
 							transform: translateY(-50%)
 							left: 21px
-					:hover
-						color: $main_color
+				.social-flex
+					display: flex
+					justify-content: center
+					a
+						display: inline-block
+						margin-right: 28px
+						span
+							position: absolute
+							top: 83px
+							right: 215px
+							width: 13px
+							height: 13px
+							padding-top: 2px
+							background-color: $main_color
+							font-family: $main_family
+							font-weight: 400
+							font-size: 8px
+							text-align: center
+							color: $on_bg_color
+							border-radius: 100%
+					&:last-child
+						margin-right: 0
+					.social-flex_por
+						position: relative
+
+
+
 
 
 
